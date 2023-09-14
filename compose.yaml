@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web-server:
+    build:
+      dockerfile: php.Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./app/:/var/www/html/"
+      - "8003:80"
