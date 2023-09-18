@@ -15,12 +15,15 @@ if($age > 18) {
 
 echo '<br/>';
 
-#example 2
+#example 2 (use of multiple conditions)
 
 $time = 23;
 if($time < 12) {
-    echo "it is in the morning";
+    echo "Tt is in the morning";
 } elseif ($time >= 18) {
-    echo "it is in the evening";
+    echo "Ut is in the evening";
+} else {
+    echo "It is the afternoon";
 }
+echo '<br/>';
 ?>
