@@ -1,13 +1,13 @@
-version: "3"
+version: "3" # The version of Docker Compose file format
 
 services:
   web:
-    #build:
+    #build: to create our own image and relate it to the exisiting docker image
       #dockerfile: php.Dockerfile
-      #context: .
+      #context: . (telling it to be created at the root directory)
     image: docker.io/php:8.2-apache
-    restart: always
+    restart: always #for a container in your Docker Compose configuration, it means that Docker will automatically restart that container if it exits or encounters an error, regardless of the reason for the container's termination.
     volumes:
-      - "./app/:/var/www/html/"
+      - "./app/:/var/www/html/"  # Mount a volume for database data persistence
     ports:
-      - "8003:80"
+      - "8003:80" #Map host port and tge container port. the map host port is up to you to create
