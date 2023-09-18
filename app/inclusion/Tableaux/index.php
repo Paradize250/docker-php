@@ -96,6 +96,83 @@ print_r($planets); echo '<br/>';
 sort($planets);
 print_r($planets); echo '<br/>';
 
+echo '<br/><br/><br/>';
 
+$planetes = [
+    'm' => 'mars',
+    't' => 'terre', 
+    'u' => 'uranus', 
+    'v' =>'venus', 
+    'j' => 'jupiter',
+];
+
+// to not use all at the same time like in the examples bellow
+print_r($planetes);
+sort($planetes); //Sort an array in ascending order. Sorts array in place by values in ascending order.
+print_r($planetes);
+asort($planetes); //Sort an array in ascending order and maintain index association
+print_r($planetes);
+rsort($planetes);//Sort an array in descending order
+print_r($planetes); 
+ksort($planetes); //Sort an array by key in ascending order
+print_r($planetes);
+arsort($planetes); //Sort an array in descending order and maintain index association
+print_r($planetes);
+krsort($planetes); //Sort an array by key in descending order
+print_r($planetes);
+
+echo '<br/><br/><br/>';
+$tab = [];
+$tab [] = ['A', 'B', 'C'];
+$tab [] = ['Q', 'R','T'];
+$tab [] = ['E', 'U', 'P', 'I'];
+print_r($tab);
+
+echo '<br/><br/><br/>';
+print_r($tab[0][2]);
+print_r($tab[2][0]);
+print_r($tab[2][2]);
+print_r($tab[2][2]);
+print_r($tab[2][3]);
+print_r($tab[0][2]);
+
+// or use the concatination method
+echo '<br/><br/><br/>';
+print_r($tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2]);
+
+// or use the echo command
+echo '<br/><br/><br/>';
+echo $tab[0][2] . $tab[2][0] . $tab[2][2] . $tab[2][2] . $tab[2][3] . $tab[0][2];
+
+$person1 = [
+    'nom' => 'Carle',
+    'prenom' => 'Awa',
+    'email' => 'cawa@yahoo.com'
+];
+$people = [
+    $person1,
+    [
+        'nom' => 'Mourad',
+        'prenom' => 'Michel',
+        'email' => 'moumi@caramail.com'   
+    ],
+    [
+        'nom' => 'Dupond',
+        'prenom' => 'Lucie',
+        'email' => 'ludu@gmail.com'   
+    ]
+];
+print_r($people);
+
+/* Afficher les phrases :
+'Le nom de Lucie est Dupond'
+'L'email de Mourad est mouni @caramail.com' */
+
+print_r('Le nom de ' . $people[2]['prenom'] . ' est ' . $people[2]['nom'] . '.');
+echo '<br/>';
+print_r('L\'email de ' . $people[1]['nom'] . ' est ' . $people[1]['email'] . '.');
+echo '<br/>';
+print_r('Le nom de ' . $people[0]['prenom'] . ' est ' . $people[0]['nom'] . '.');
+echo '<br/>';
 
 ?>
