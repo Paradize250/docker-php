@@ -20,7 +20,7 @@ echo '<br/>';
 $time = 23;
 if($time < 12) {
     echo "it is in the morning";
-} else {
+} elseif ($time >= 18) {
     echo "it is in the evening";
 }
 ?>
