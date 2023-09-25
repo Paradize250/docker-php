@@ -174,5 +174,29 @@ print_r('L\'email de ' . $people[1]['nom'] . ' est ' . $people[1]['email'] . '.'
 echo '<br/>';
 print_r('Le nom de ' . $people[0]['prenom'] . ' est ' . $people[0]['nom'] . '.');
 echo '<br/>';
+//------------------------------------------------------------------------------------
+// create a json file
+$jsonFile = json_encode ($people);
+print_r($jsonFile);
 
+echo '<br/><br/><br/>';
+
+$jsonPerson = '{
+    "nom" : "Pont",
+    "prenom" : "Albert",
+    "email" : "ponal@yahoo.fr",
+    "couleur" : ["rouge","vert", "jaune"],
+    "image": "http://xiMg.es/128x128/000/FFF"
+}';
+$jsonPersonArray = json_decode($jsonPerson, true);
+print_r($jsonPersonArray);
 ?>
+<Figure>
+    <img src="<?=$jsonPersonArray['image']?>">
+    <figcaption>
+        <ul>
+            <li><?=$jsonPersonArray['prenom']?><?=$jsonPersonArray['nom']?></li>
+            <li><?=$jsonPersonArray['email']?></li>
+        </ul>
+    </figcaption>
+</Figure>
