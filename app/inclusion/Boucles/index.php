@@ -1,4 +1,5 @@
 <?php
+
 echo("BOUCLES");
 echo '<br/>';
 
@@ -89,21 +90,7 @@ foreach($user as $key => $value):
     }
 endforeach;
 //------------------------------------------------------------------------------------------------------
-echo '<br/><br/>';
-echo("<The use of While");
-/* example 1 */
 
-$i = 1;
-while ($i <= 10) {
-    echo $i++;  /* the printed value would be
-                   $i before the increment
-                   (post-increment) */
-}
+//https://www.php.net/manual/en/control-structures.while.php REASEARCH
 
-/* example 2 */
-
-$i = 1;
-while ($i <= 10):
-    echo $i;
-    $i++;
-endwhile;
+//------------------------------------------------------------------------------------------------------

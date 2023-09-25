@@ -4,5 +4,5 @@
     <!-- to include a new page and create a link make sure that the listed item has the correct path-->
     <li><a href="./Boucles/index.php">Boucles</a></li>
     <li><a href="./Tableaux/index.php">Tableaux</a></li>
-    <li><a href="">Fonctions</a></li>
+    <li><a href="./Functions/index.php">Fonctions</a></li>
 </ul>
