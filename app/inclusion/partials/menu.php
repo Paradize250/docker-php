@@ -5,4 +5,5 @@
     <li><a href="./Boucles/index.php">Boucles</a></li>
     <li><a href="./Tableaux/index.php">Tableaux</a></li>
     <li><a href="./Functions/index.php">Fonctions</a></li>
+    <li><a href="./Loop-tables/index.php">Loop-tables</a></li>
 </ul>

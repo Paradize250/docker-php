@@ -165,4 +165,16 @@ $substring = substr($string, 7, 5);
 
 echo $substring; // Output: "World"
 
+//------------------------------------------------------------------------------------------------------
+echo '<br/><br/>';
+$globalVar = 42; // This is a global variable
 
+function exampleFunction() {
+    global $globalVar; // Use the global keyword to access the global variable
+    echo $globalVar;  // This will output the value of the global variable
+}
+
+exampleFunction(); // Call the function
+
+//------------------------------------------------------------------------------------------------------
+echo '<br/><br/>';
