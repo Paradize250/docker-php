@@ -6,4 +6,5 @@
     <li><a href="./Tableaux/index.php">Tableaux</a></li>
     <li><a href="./Functions/index.php">Fonctions</a></li>
     <li><a href="./Loop-tables/index.php">Loop-tables</a></li>
+    <li><a href="././form.php">Forms</a></li>
 </ul>
