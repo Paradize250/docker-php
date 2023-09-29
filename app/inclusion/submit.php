@@ -18,11 +18,26 @@
                 $email = $_POST["email"];
                 $title = $_POST["title"];
                 $comment = $_POST["comment"];
+                
+                // Access the selected competencies and levels as arrays
+                $competencies = isset($_POST["competency"]) ? $_POST["competency"] : [];
+                $levels = isset($_POST["level"]) ? $_POST["level"] : [];
 
                 echo "<p><strong>Name:</strong> $name</p>";
                 echo "<p><strong>Email:</strong> $email</p>";
                 echo "<p><strong>Title:</strong> $title</p>";
                 echo "<p><strong>Comment:</strong> $comment</p>";
+
+                // Output selected competencies and levels
+                if (!empty($competencies)) {
+                    echo "<p><strong>Competencies:</strong> ";
+                    foreach ($competencies as $competency => $value) {
+                        echo "$competency ($levels[$competency]), ";
+                    }
+                    echo "</p>";
+                } else {
+                    echo "<p><strong>Competencies:</strong> None selected</p>";
+                }
             } else {
                 echo "<p>No form data submitted.</p>";
             }
